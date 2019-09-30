@@ -14,7 +14,7 @@ $no = New-Object System.Management.Automation.Host.ChoiceDescription '&No'
 $options = [System.Management.Automation.Host.ChoiceDescription[]]($yes, $no)
 
 $pwsh = $host.ui.PromptForChoice("", "Install Powershell Core (pwsh)", $options, 0)
-if ($pwsh -eq 0 ) { $pwshcm = $host.ui.PromptForChoice("", "Add Powershell Core to the context Menu", $options, 0) }
+#if ($pwsh -eq 0 ) { $pwshcm = $host.ui.PromptForChoice("", "Add Powershell Core to the context Menu", $options, 0) }
 $go = $host.ui.PromptForChoice("", "Install Go", $options, 0)
 $code = $host.ui.PromptForChoice("", "Install VS Code", $options, 1)
 $mingw = $host.ui.PromptForChoice("", "Install MinGW (GCC)", $options, 0)
