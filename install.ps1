@@ -85,6 +85,6 @@ if ($mingw -eq 0) {
 	if (-Not (Test-Path "$location\apps\gcc.exe")) {
 		Download -item "mingw" -url $mingwUrl -ext exe
 	}
-	InstallExe "mingw" @("-O$($installDir)mingw\", "-y")
-	AddToPath "mingw"
+	InstallExe "mingw" @("-O$($installDir)\", "-y")
+	AddToPath "MinGW"
 }
